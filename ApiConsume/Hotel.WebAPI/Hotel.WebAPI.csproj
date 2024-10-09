@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Hotel.DataAccess\Hotel.DataAccess.csproj" />
     <ProjectReference Include="..\Hotel.Business\Hotel.Business.csproj" />
     <ProjectReference Include="..\Hotel.DtoLayer\Hotel.Dto.csproj" />
