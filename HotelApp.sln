@@ -12,17 +12,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{5A
 		ToDo.txt = ToDo.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.WebAPI", "ApiConsume\Hotel.WebAPI\Hotel.WebAPI.csproj", "{04CF6935-D121-4027-85A6-6CD7FEDA3925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.WebAPI", "ApiConsume\Hotel.WebAPI\Hotel.WebAPI.csproj", "{04CF6935-D121-4027-85A6-6CD7FEDA3925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Entity", "ApiConsume\Hotel.Entity\Hotel.Entity.csproj", "{8FC5F277-B6ED-4E2B-86B8-23273E1CD947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Entity", "ApiConsume\Hotel.Entity\Hotel.Entity.csproj", "{8FC5F277-B6ED-4E2B-86B8-23273E1CD947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.DataAccess", "Hotel.DataAccess\Hotel.DataAccess.csproj", "{1A93DBA9-EB60-468A-9234-C6BA47071C69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.DataAccess", "Hotel.DataAccess\Hotel.DataAccess.csproj", "{1A93DBA9-EB60-468A-9234-C6BA47071C69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Business", "ApiConsume\Hotel.Business\Hotel.Business.csproj", "{CC0A9414-9006-426F-BDF3-BC621A5285EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Business", "ApiConsume\Hotel.Business\Hotel.Business.csproj", "{CC0A9414-9006-426F-BDF3-BC621A5285EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Dto", "ApiConsume\Hotel.DtoLayer\Hotel.Dto.csproj", "{9F701595-253C-40EE-AECB-78C854D89F35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Dto", "ApiConsume\Hotel.DtoLayer\Hotel.Dto.csproj", "{9F701595-253C-40EE-AECB-78C854D89F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.WebUI", "Frontend\Hotel.WebUI\Hotel.WebUI.csproj", "{EB2343BE-28E4-46A3-BFD7-7BE6D00D6BA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.WebUI", "Frontend\Hotel.WebUI\Hotel.WebUI.csproj", "{EB2343BE-28E4-46A3-BFD7-7BE6D00D6BA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
