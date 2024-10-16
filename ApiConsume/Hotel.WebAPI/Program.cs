@@ -1,8 +1,11 @@
+using AutoMapper;
 using Hotel.Business.Abstract;
 using Hotel.Business.Concrete;
 using Hotel.DataAccess.Abstract;
 using Hotel.DataAccess.Concrete;
 using Hotel.DataAccess.EntityFramework;
+using Hotel.WebAPI.Mapping;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,8 @@ builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
 
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // API Consume
 builder.Services.AddCors(opt =>
