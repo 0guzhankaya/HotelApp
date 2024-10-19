@@ -24,7 +24,7 @@ namespace Hotel.WebAPI.Controllers
         public IActionResult RoomList()
         {
             var values = _roomService.TGetList();
-            return Ok();
+            return Ok(values);
         }
 
 
@@ -32,7 +32,7 @@ namespace Hotel.WebAPI.Controllers
         public IActionResult GetRoom(int id) 
         {
             var values = _roomService.TGetById(id);
-            return Ok();
+            return Ok(values);
         }
 
         [HttpPost]
@@ -44,7 +44,7 @@ namespace Hotel.WebAPI.Controllers
             var values = _mapper.Map<Room>(roomAddDto);
             _roomService.TInsert(values);
 
-            return Ok();
+            return Ok(values);
         }
 
         [HttpPut]
@@ -53,7 +53,7 @@ namespace Hotel.WebAPI.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var values = _mapper.Map<Room>(_roomService);
+            var values = _mapper.Map<Room>(roomUpdateDto);
             _roomService.TUpdate(values);
 
             return Ok("Güncelleme Başarılı!");
