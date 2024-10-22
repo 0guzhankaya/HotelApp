@@ -1,1 +1,11 @@
-1. Api Testing and Swagger.
+1. Veritabanýna kaydedilecek referans fotoðraflarý
+
+~/hotel-html-template/img/testimonial-1.jpg // Kadýn
+~/hotel-html-template/img/testimonial-2.jpg
+~/hotel-html-template/img/testimonial-3.jpg
+~/hotel-html-template/img/testimonial-4.jpg // Kadýn
+
+2. Veritabanýna kaydedilecek staff fotoðraflarý
+~/hotel-html-template/img/team-1.jpg
+~/hotel-html-template/img/team-2.jpg
+~/hotel-html-template/img/team-3.jpg

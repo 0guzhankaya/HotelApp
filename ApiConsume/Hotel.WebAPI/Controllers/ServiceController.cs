@@ -41,7 +41,7 @@ namespace Hotel.WebAPI.Controllers
         public IActionResult UpdateService(Service service)
         {
             _serviceService.TUpdate(service);
-            return Ok();
+            return Ok("Güncelleme Başarılı!");
         }
 
         [HttpDelete("{id}")]
@@ -49,7 +49,7 @@ namespace Hotel.WebAPI.Controllers
         {
             var values = _serviceService.TGetById(id);
             _serviceService.TDelete(values);
-            return Ok();
+            return Ok("Silme İşlemi Başarılı!");
         }
     }
 }

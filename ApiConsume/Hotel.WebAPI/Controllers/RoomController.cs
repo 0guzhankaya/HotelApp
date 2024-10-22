@@ -64,7 +64,7 @@ namespace Hotel.WebAPI.Controllers
         {
             var values = _roomService.TGetById(id);
             _roomService.TDelete(values);
-            return Ok();
+            return Ok("Silme İşlemi Başarılı!");
         }
     }
 }

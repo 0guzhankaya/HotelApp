@@ -23,7 +23,7 @@ namespace Hotel.WebAPI.Controllers
         public IActionResult AboutList()
         {
             var values = _aboutService.TGetList();
-            return Ok();
+            return Ok(values);
         }
 
         [HttpGet("{id}")]
@@ -62,7 +62,7 @@ namespace Hotel.WebAPI.Controllers
         {
             var values = _aboutService.TGetById(id);
             _aboutService.TDelete(values);
-            return Ok();
+            return Ok("Silme İşlemi Başarılı!");
         }
     }
 }
