@@ -18,7 +18,7 @@ namespace Hotel.WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5064/api/Staff");
+            var responseMessage = await client.GetAsync("http://localhost:5238/api/Staff");
 
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -42,7 +42,7 @@ namespace Hotel.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(model);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:7071/api/Staff", stringContent);
+            var responseMessage = await client.PostAsync("http://localhost:5238/api/Staff", stringContent);
 
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -55,7 +55,7 @@ namespace Hotel.WebUI.Controllers
         public async Task<IActionResult> DeleteStaff(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:7071/api/Staff/{id}");
+            var responseMessage = await client.DeleteAsync($"http://localhost:5238/api/Staff/{id}");
 
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -68,7 +68,7 @@ namespace Hotel.WebUI.Controllers
         public async Task<IActionResult> UpdateStaff(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:7071/api/Staff/{id}");
+            var responseMessage = await client.GetAsync($"http://localhost:5238/api/Staff/{id}");
 
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -86,7 +86,7 @@ namespace Hotel.WebUI.Controllers
             var jsonData = JsonConvert.SerializeObject(model);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-            var responseMessage = await client.PutAsync("http://localhost:7071/api/Staff/", stringContent);
+            var responseMessage = await client.PutAsync("http://localhost:5238/api/Staff/", stringContent);
 
             if (responseMessage.IsSuccessStatusCode)
             {

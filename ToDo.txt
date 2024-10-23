@@ -9,3 +9,10 @@
 ~/hotel-html-template/img/team-1.jpg
 ~/hotel-html-template/img/team-2.jpg
 ~/hotel-html-template/img/team-3.jpg
+
+3. Testimonial admin panelinde 'Unable to fetch testimonial data' hatasý, düzeltilecek.
+
+4. Booking Index'de hata var.
+5. Booking Add'de css dosyalarý yüklenemiyor.
+
+6. Rezervasyon adýmlarý gerçekleþtirilecek.

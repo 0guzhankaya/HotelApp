@@ -34,7 +34,7 @@ namespace Hotel.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createSubscribeDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            await client.PostAsync("https://localhost:7171/api/Subscribe", stringContent);
+            await client.PostAsync("http://localhost:5238/api/Subscribe", stringContent);
 
             return RedirectToAction("Index", "Default");
         }
